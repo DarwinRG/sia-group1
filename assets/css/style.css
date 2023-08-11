@@ -1,0 +1,25 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+a {
+  font-family: 'Helvetica';
+  text-decoration:none;
+  color: #000;
+  margin: 18px;
+  font-size: 20px;
+  font-stretch: 67%;
+
+}
+
+button {
+  font-family: 'Chub Gothic';
+  color: #0c0e1c;
+}
+
+a:hover {
+  background-color: #ccc;
+  color: #fff;
+}
+
+
