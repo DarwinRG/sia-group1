@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Cyberpunk College of Technology</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
@@ -10,12 +10,12 @@
     <style>
       @font-face {
         font-family: Chub Gothic;
-        src: "/assets/fonts/chubgothic_1.ttf";
+        src: "assets/fonts/chubgothic_1.ttf";
       }
 
       @font-face {
         font-family: Helvetica;
-        src: "/assets/fonts/Helvetica.ttf";
+        src: "assets/fonts/Helvetica.ttf";
       }
 
       h1 {
@@ -32,7 +32,7 @@
   <body
     style="
       background-color: #0c0e1c;
-      background-image: url('assets/images/cyberpunk_background.png');
+      background-image: url('assets/images/bgforindex.png');
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
@@ -71,606 +71,57 @@
       </div>
     </header>
 
-    <!-- ======= Search Box ======= -->
-    <div style="text-align: center">
-      <header style="background-color: #333; padding: 5px; opacity: 0.8">
-        <style>
-          #search-box {
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            font-size: 16px;
-            width: 300px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-          }
-
-          #search-box:focus {
-            outline: none;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-          }
-
-          header h1 {
-            font-size: 25px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            color: #ffffff;
-          }
-
-          header {
-            text-align: center;
-            background-color: #333;
-            padding: 10px;
-          }
-        </style>
-        <h1
-          style="
-            text-align: center;
-            font-family: 'Oswald';
-            margin: 3px;
-            padding: 5px;
-            color: #fff;
-          "
-        >
-          STUDENT INFORMATION SYSTEM
-        </h1>
-        <input
-          type="text"
-          id="search-box"
-          placeholder="Search for a student..."
+    <div style="display: flex; overflow: hidden">
+      <div class style="width: 50%; padding-left: 70px; vertical-align: 1">
+        <img
+          src="assets/images/elementsonlylogo.png"
+          alt="Logo"
+          style="width: 600px"
         />
-      </header>
-    </div>
+      </div>
 
-    <style>
-      /* Students grid styles */
-      .page {
-        max-width: 800px;
-        margin: 20px auto;
-        padding: 20px 40px;
-        /* Add padding to the top and bottom, and left and right */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+      <div style="width: 50%; text-align: center; padding-right: 170px">
+        <h2>
+          <section>
+            <p
+              style="
+                color: #fff;
+                font-family: 'Oswald';
+                font-size: 16px;
+                letter-spacing: 0.6em;
+              "
+            >
+              START YOUR JOURNEY AT
+            </p>
+            <img
+              src="assets/images/ccttextonly.png"
+              alt="Logo"
+              style="width: 580px"
+            />
 
-      .students {
-        display: grid;
-        grid-template-columns: repeat(4, minmax(250px, 1fr));
-        grid-auto-rows: 1fr;
-        grid-gap: 20px;
-        margin-top: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-        min-height: 50vh;
-        justify-content: center;
-        align-content: center;
-      }
-
-      /* Student box styles */
-      .student {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        grid-gap: 10px;
-        text-align: center;
-        border: 3px solid black;
-        overflow: hidden;
-        font-family: Arial, sans-serif;
-        font-size: 15px;
-      }
-
-      /* Hover effects */
-      .student:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-      }
-
-      /* Student image styles */
-      .student img {
-        width: 100%;
-        height: auto;
-        border: 2px solid black;
-        object-fit: cover;
-        aspect-ratio: 1 / 1;
-        min-width: 250px;
-      }
-
-      html,
-      body {
-        height: 100%;
-      }
-
-      @media (max-width: 250px) {
-        .students {
-          grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
-        }
-      }
-    </style>
-
-    <div class="students">
-      <div class="student">
-        <img src="pictures/Aboga.jpg" alt="Student 1" />
-        <p><b>Cyzrah Janna Nica Aboga</b></p>
-        <p>ID: 1221207</p>
-        <p>April 4, 2004</p>
-        <p>Samon, Sta. Maria, Pangasinan</p>
-        <p><em>"When nothing goes right , go left."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Albay.jpg" alt="Student 2" />
-        <p><b>Roger Albay Jr.</b></p>
-        <p>ID: 1220048</p>
-        <p>September 9, 2001</p>
-        <p>Pozorrubio Pangasinan</p>
-        <p><em>"What you earn depends on what your learn."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Alcantara.jpg" alt="Student 3" />
-        <p><b>Ralf Rj Alcantara</b></p>
-        <p>ID: 1220849</p>
-        <p>March 8, 2004</p>
-        <p>Carosucan Norte Asingan, Pangasinan.</p>
-        <p><em>"Go with the flow that's life."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Alimboyong.jpg" alt="Student 4" />
-        <p><b>Christian Alimboyong</b></p>
-        <p>ID: 1190200</p>
-        <p>April 19, 2001</p>
-        <p>Carayacan Sitio Caniogan, San Quintin, Pangasinan.</p>
-        <p><em>"Lost time is never found again."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Amolacion.jpg" alt="Student 5" />
-        <p><b>Denmark Amolacion</b></p>
-        <p>ID: 1221437</p>
-        <p>January 29, 2004</p>
-        <p>Cabuloan, Urdaneta City, Pangasinan</p>
-        <p>
-          <em
-            >"Being young is our greatest asset because we could fail now and
-            rise up immediately."</em
-          >
-        </p>
-      </div>
-      <div class="student">
-        <img src="pictures/Bazar.jpg" alt="Student 6" />
-        <p><b>Ronalie Bazar</b></p>
-        <p>ID: 1220395</p>
-        <p>January 8, 2004</p>
-        <p>Rd.1 Cataguingtingan, Rosario, La Union</p>
-        <p>
-          <em
-            >"Laughing is the best medicine but if you're laughing without any
-            reason you need medicine."</em
-          >
-        </p>
-      </div>
-      <div class="student">
-        <img src="pictures/Bibat.jpg" alt="Student 7" />
-        <p><b>Dyana Rose Bibat</b></p>
-        <p>ID: 1220855</p>
-        <p>September 16, 2000</p>
-        <p>San Vicente, San Manuel, Pang.</p>
-        <p>
-          <em
-            >"The future belongs to those who believe in the beauty of their
-            dreams"</em
-          >
-        </p>
-      </div>
-      <div class="student">
-        <img src="pictures/Bien.jpg" alt="Student 8" />
-        <p><b>Al Vincent Bien</b></p>
-        <p>ID: 1221079</p>
-        <p>September 20, 2004</p>
-        <p>Barangobong, Villasis, Pangasinan</p>
-        <p><em>"Opportunities don't happen, you create them."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Cabilitan.jpg" alt="Student 9" />
-        <p><b>Kaiser Cabilitazan</b></p>
-        <p>ID: Placeholder</p>
-        <p>June 3, 1997</p>
-        <p>Alipang, Rosario, La Union</p>
-        <p><em>"Make it easy baby."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Campos.jpg" alt="Student 10" />
-        <p><b>Donald Gregore Campos</b></p>
-        <p>ID: 1220758</p>
-        <p>December 22, 2001</p>
-        <p>Zone 1, Caaringayan, Laoac, Pangasinan</p>
-        <p><em>"Life is hard."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Canonero.jpg" alt="Student 11" />
-        <p><b>Xhane Ann Canonero</b></p>
-        <p>ID: 1220077</p>
-        <p>November 15,2003</p>
-        <p>San Roque, San manuel, Pangasinan</p>
-        <p>
-          <em
-            >"I am a person who is constantly evolving and striving to become
-            the best version of myself."</em
-          >
-        </p>
-      </div>
-      <div class="student">
-        <img src="pictures/Caoayan.jpg" alt="Student 12" />
-        <p><b>Carlitos Avel Caoayan</b></p>
-        <p>ID: 1221170</p>
-        <p>September 28, 2003</p>
-        <p>Station District, Rosales, Pangasinan</p>
-        <p>
-          <em
-            >"Who is that well dressed man on the other side? Ah, the other me.
-            Of course."</em
-          >
-        </p>
-      </div>
-      <div class="student">
-        <img src="pictures/Cariaso.jpg" alt="Student 13" />
-        <p><b>Lovely Joy Cariaso</b></p>
-        <p>ID: 1190730</p>
-        <p>September 3, 2000</p>
-        <p>Sinimbaan, Cuyapo, Nueva Ecija</p>
-        <p><em>"Keep it private until you know it's permanent."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Carino.jpg" alt="Student 14" />
-        <p><b>Lyndon Cariño</b></p>
-        <p>ID: 1200399</p>
-        <p>July 27, 2002</p>
-        <p>Inoman, Pozorrubio, Pangasinan</p>
-        <p><em>"Appreciate the little things."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Colobong.jpg" alt="Student 15" />
-        <p><b>John Carl Colobong</b></p>
-        <p>ID: 1221067</p>
-        <p>October 9, 2004</p>
-        <p>Carosucan Norte, Asingan, Pangasinan</p>
-        <p>
-          <em
-            >"Life is not about finding yourself. Life is about creating
-            yourself."</em
-          >
-        </p>
-      </div>
-      <div class="student">
-        <img src="pictures/Coloma.jpg" alt="Student 16" />
-        <p><b>Stephen Klien Coloma</b></p>
-        <p>ID: 1220948</p>
-        <p>June 3, 2003</p>
-        <p>Pinmaludpod, Urdaneta City, Pangasinan</p>
-        <p><em>"basta ako happy"</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Corpuz.jpg" alt="Student 17" />
-        <p><b>Julius Corpuz</b></p>
-        <p>ID: 1221206</p>
-        <p>July 12, 2003</p>
-        <p>Lipay, Villasis, Pangasinan</p>
-        <p><em>"We are what we overcome."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/De_Guzman.jpg" alt="Student 18" />
-        <p><b>Hazel Anjela De Guzman</b></p>
-        <p>ID: 1221205</p>
-        <p>September 17, 2001</p>
-        <p>Dumayat, Binalonan, Pangasinan</p>
-        <p><em>"I've become what I must be."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Demonteverde.jpg" alt="Student 19" />
-        <p><b>John Lino Demonteverde</b></p>
-        <p>ID: 1220429</p>
-        <p>May 5, 2004</p>
-        <p>Amamperez, Villasis, Pangasinan</p>
-        <p><em>"Simplicity is the soul of efficiency."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Dizon.jpg" alt="Student 20" />
-        <p><b>Jearo Dizon</b></p>
-        <p>ID: 1220961</p>
-        <p>July 17, 2004</p>
-        <p>San Manuel, Pangasinan</p>
-        <p>
-          <em
-            >"If my life is going to mean anything. I have to live myself."</em
-          >
-        </p>
-      </div>
-      <div class="student">
-        <img src="pictures/Duque.jpg" alt="Student 21" />
-        <p><b>Jimson Luis Duque</b></p>
-        <p>ID: 1190941</p>
-        <p>October 24, 2001</p>
-        <p>Cauringan, Sison, Pangasinan</p>
-        <p><em>"Pag di mo kaya sagutan lumingon kalang."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Estrada.jpg" alt="Student 22" />
-        <p><b>Angela Estrada</b></p>
-        <p>ID: 1220124</p>
-        <p>February 24, 2004</p>
-        <p>Sta. Maria, Pangasinan</p>
-        <p><em>"Life is full of Surprises."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Fabia.jpg" alt="Student 23" />
-        <p><b>Johnmark Lester Fabia</b></p>
-        <p>ID: 1220583</p>
-        <p>April 14, 2004</p>
-        <p>Malokiat, Pozorrubio, pangasinan</p>
-        <p><em>"The purpose of our lives is to be happy."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Fucio.jpg" alt="Student 24" />
-        <p><b>Ma. Chrystal Yvone Fucio</b></p>
-        <p>ID: 1221025</p>
-        <p>January 26, 2004</p>
-        <p>Zone 2 Riverside, Amamperez, Villasis, Pangasinan</p>
-        <p>
-          <em
-            >"If I don't have to do it, I won't. If I have to do it, I'll make
-            it quick."</em
-          >
-        </p>
-      </div>
-      <div class="student">
-        <img src="pictures/Gabaldon.jpg" alt="Student 25" />
-        <p><b>Jhon Bryan Gabaldon</b></p>
-        <p>ID: 1220434</p>
-        <p>February 22, 2003</p>
-        <p>Mangaldan, Pangasinan</p>
-        <p><em>"Be yourself."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Ganio.jpg" alt="Student 26" />
-        <p><b>Charlie Kurt Ganio</b></p>
-        <p>ID: 1220545</p>
-        <p>December 4, 2002</p>
-        <p>Pindagan, Sison, Pangasinan</p>
-        <p><em>"You only live once."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Ganzagan.jpg" alt="Student 27" />
-        <p><b>Chrismar Jose Ganzagan</b></p>
-        <p>ID: Placeholder</p>
-        <p>October 20, 2003</p>
-        <p>Zone 2 Riverside, Amamperez, Villasis, Pangasinan</p>
-        <p><em>"Veni Vidi Vici."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Gonzales.jpg" alt="Student 28" />
-        <p><b>Kimberly Gonzales</b></p>
-        <p>ID: 1220777</p>
-        <p>April 24, 2004</p>
-        <p>Mabini, Moncada, Tarlac</p>
-        <p><em>"Wala me ma say."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Guillermo.jpg" alt="Student 29" />
-        <p><b>Darwin Guillermo</b></p>
-        <p>ID: 1221003</p>
-        <p>July 1, 2002</p>
-        <p>San Manuel, Pangasinan</p>
-        <p><em>"Slow is smooth, smooth is fast."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Guinto.jpg" alt="Student 30" />
-        <p><b>Rosario Guinto</b></p>
-        <p>ID: 1190108</p>
-        <p>June 24, 1999</p>
-        <p>Pacpaco, San Manuel, Tarlac</p>
-        <p>
-          <em
-            >"Life's too short, so it's okay to make mistakes sometimes, at
-            least you've learned a lot to be a better person someday."</em
-          >
-        </p>
-      </div>
-      <div class="student">
-        <img src="pictures/Katigbak.jpg" alt="Student 31" />
-        <p><b>Ringo Vernon Katigbak</b></p>
-        <p>ID: 1190282</p>
-        <p>December 14, 2000</p>
-        <p>Calle Abo St., Paniqui, Tarlac</p>
-        <p><em>"Always win."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Lingat.png" alt="Student 32" />
-        <p><b>Jeania Radzny Lingat</b></p>
-        <p>ID: 1220995</p>
-        <p>January 31, 2004</p>
-        <p>Binalonan, Pangasinan</p>
-        <p>
-          <em
-            >"If you are not a good shot today, don't worry, there are other
-            ways to be useful."</em
-          >
-        </p>
-      </div>
-      <div class="student">
-        <img src="pictures/Luzan.jpg" alt="Student 33" />
-        <p><b>Jann Joseph Henrick Luzan</b></p>
-        <p>ID: 1221080</p>
-        <p>November 12, 2001</p>
-        <p>Cauringan, Sison, Pangasinan</p>
-        <p><em>"Let your ambition fuel you to be the best."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Madronio.jpg" alt="Student 34" />
-        <p><b>Derek Emmanuel Madronio</b></p>
-        <p>ID: 1220067</p>
-        <p>August 9, 2004</p>
-        <p>319 Bacag West Villasis Pangasinan</p>
-        <p><em>"Every day has its ending."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Manzano.jpg" alt="Student 35" />
-        <p><b>Jonray Dale Manzano</b></p>
-        <p>ID: 1221098</p>
-        <p>October 11, 2003</p>
-        <p>Barangobong, Villasis, Pangasinan</p>
-        <p><em>"Wag kang papalipas ng gutom i love you"</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Miranda.jpg" alt="Student 36" />
-        <p><b>Ruffy Miranda</b></p>
-        <p>ID: 1221519</p>
-        <p>July 21, 1998</p>
-        <p>250 Anonas East, Pangasinan</p>
-        <p><em>"Time is Gold."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Obina.png" alt="Student 37" />
-        <p><b>Jashua Obina</b></p>
-        <p>ID: 1221124</p>
-        <p>July 27, 2003</p>
-        <p>Bolaoen, Urdaneta City, Pangasinan</p>
-        <p>
-          <em
-            >"If you're focusing on other things, you lose focus on the
-            important things."</em
-          >
-        </p>
-      </div>
-      <div class="student">
-        <img src="pictures/Olivar.jpg" alt="Student 38" />
-        <p><b>Mark Clarence Olivar</b></p>
-        <p>ID: 1220180</p>
-        <p>December 20, 2002</p>
-        <p>Sanblas, Villasis, Pangasinan</p>
-        <p>
-          <em>"Wear A Mask Long Enough, And You Forget The Face Beneath."</em>
-        </p>
-      </div>
-      <div class="student">
-        <img src="pictures/Ortiguero.jpg" alt="Student 39" />
-        <p><b>Frances June Ortiguero</b></p>
-        <p>ID: 1220668</p>
-        <p>June 06, 2004</p>
-        <p>Bacag West, Villasis, Pangasinan</p>
-        <p><em>"imissyoualwaysbabygurl."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Pablo.jpg" alt="Student 40" />
-        <p><b>Lyndon John Pablo</b></p>
-        <p>ID: 1220049</p>
-        <p>June 24, 2004</p>
-        <p>Guiset Norte, San Manuel, Pangasinan</p>
-        <p><em>"Live happy while there's still time."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Parel.jpg" alt="Student 41" />
-        <p><b>Kierstan Seigheart Parel</b></p>
-        <p>ID: 1220602</p>
-        <p>January 3, 2004</p>
-        <p>Rosales, Pangasinan</p>
-        <p><em>"Expect nothing and you will never be disappointed."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Ramirez.jpg" alt="Student 42" />
-        <p><b>Richard Von Ramirez</b></p>
-        <p>ID: 1190368</p>
-        <p>September 29, 2001</p>
-        <p>San Quintin, Pangasinan</p>
-        <p><em>"If you want it, work for it."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Segundo.jpg" alt="Student 43" />
-        <p><b>Ken Charles Segundo</b></p>
-        <p>ID: 1220523</p>
-        <p>October 21, 2003</p>
-        <p>San Vicente Centro, Urdaneta City, Pangasinan</p>
-        <p><em>"If there's a hole, there's a goal."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Sumera.jpg" alt="Student 44" />
-        <p><b>Bryan Emil Sumera</b></p>
-        <p>ID: 1220175</p>
-        <p>April 9, 2003</p>
-        <p>San Jose, Urdaneta City, Pangasinan</p>
-        <p><em>"Success doesn't rush."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Tisel.jpg" alt="Student 45" />
-        <p><b>Rich Harry Sun Win Tisel</b></p>
-        <p>ID: Placeholder</p>
-        <p>March 29, 2005</p>
-        <p>Sta. Maria Norte, Binalonan, Pangasinan</p>
-        <p><em>"Find your One Way."</em></p>
-      </div>
-      <div class="student">
-        <img src="pictures/Tolentino.jpg" alt="Student 46" />
-        <p><b>Denielle Tolentino</b></p>
-        <p>ID: 1220517</p>
-        <p>June 18, 2004</p>
-        <p>Northwest Poblacion, Nampicuan, Nueva Ecija</p>
-        <p>
-          <em
-            >"Like the stars, we all fall until we are in the right place."</em
-          >
-        </p>
-      </div>
-      <div class="student">
-        <img src="pictures/Valdez.jpg" alt="Student 47" />
-        <p><b>Laurence Valdez</b></p>
-        <p>ID: 1221339</p>
-        <p>January 17, 2004</p>
-        <p>Alipangpang, Pozorrubio, Pangasinan</p>
-        <p><em>"Live a life you will remember."</em></p>
+            <p
+              style="
+                color: #fff;
+                font-family: 'Oswald';
+                font-size: 14px;
+                letter-spacing: 0.4em;
+              "
+            >
+              where the future unfolds before your eyes
+            </p>
+            <p style="color: #fff; font-family: 'Oswald'; font-size: 23px">
+              Choose from our offered programs, led by a faculty of esteemed
+              experts, as you immerse yourself in a world of advanced technology
+              and innovation.
+            </p>
+            <p style="color: #fff; font-family: 'Oswald'; font-size: 23px">
+              Admit now to acquire the highest quality of education, where only
+              the brightest minds and top-notch instructors shape the
+              visionaries of tomorrow.
+            </p>
+          </section>
+        </h2>
       </div>
     </div>
-    <script>
-      const searchBox = document.getElementById("search-box");
-      const students = document.querySelectorAll(".student");
-
-      searchBox.addEventListener("input", () => {
-        const searchTerm = searchBox.value.toLowerCase();
-
-        let firstMatch = null;
-
-        students.forEach((student) => {
-          const name = student
-            .querySelector("p:nth-of-type(2)")
-            .textContent.toLowerCase();
-          const id = student
-            .querySelector("p:nth-of-type(1)")
-            .textContent.toLowerCase();
-          const address = student
-            .querySelector("p:nth-of-type(4)")
-            .textContent.toLowerCase();
-          const saying = student
-            .querySelector("p:nth-of-type(5)")
-            .textContent.toLowerCase();
-
-          if (
-            name.includes(searchTerm) ||
-            id.includes(searchTerm) ||
-            address.includes(searchTerm) ||
-            saying.includes(searchTerm)
-          ) {
-            student.style.display = "block";
-
-            if (!firstMatch) {
-              firstMatch = student;
-            }
-          } else {
-            student.style.display = "none";
-          }
-        });
-
-        if (firstMatch) {
-          firstMatch.scrollIntoView();
-        }
-      });
-    </script>
   </body>
 </html>
